@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>ps4 jailbreak</title>
+<title>رائد للالعاب الالكترونية</title>
 <style>
   html, body { margin:0; padding:0; background:#0b0d10; color:#c8ced8;
                font:15px/1.45 "Segoe UI", system-ui, sans-serif; }
-  #wrap { padding:16px 18px; }
+  #wrap { padding:16px 18px; text-align:center; } /* تم إضافة التوسيط هنا لتبدو الصورة والنصوص منسقة */
   #state { font-size:44px; font-weight:700; margin:0 0 6px; }
   #det { font-size:26px; color:#8b95a3; margin:0 0 4px; }
   #det b { color:#c8ced8; font-weight:600; }
@@ -20,10 +20,22 @@
                vertical-align:middle; }
   #brand b { font-size:30px; font-weight:700; letter-spacing:.14em;
              color:#e6ebf2; vertical-align:middle; }
+             
+  /* تنسيق الصورة المضافة ليناسب شاشات التلفاز والـ PS4 */
+  .custom-image {
+    max-width: 100%;
+    height: auto;
+    max-height: 250px; /* يمكنك تعديل الارتفاع الأقصى حسب رغبتك */
+    margin-bottom: 20px;
+    border-radius: 8px;
+  }
 </style>
 </head>
 <body>
 <div id="wrap">
+  <!-- عنصر الصورة المضافة (استبدل logo.png بمسار صورتك) -->
+  <img src="image.png" alt="PS4 JB Image" class="custom-image">
+
   <div id="state">detecting firmware...</div>
   <div id="det"></div>
   <div id="cache"></div>
