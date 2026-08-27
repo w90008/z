@@ -7,11 +7,11 @@
 <style>
   html, body { margin:0; padding:0; background:#0b0d10; color:#c8ced8;
                font:15px/1.45 "Segoe UI", system-ui, sans-serif; }
-  #wrap { padding:16px 18px; }
-  #state { font-size:22px; font-weight:700; margin:0 0 10px; }
+  #wrap { padding:16px 18px; text-align:center; } /* تم إضافة التوسيط هنا لتنسيق موقع الصورة والنصوص */
+  #state { font-size:22px; font-weight:700; margin:0 0 10px; text-align: left; }
   #out { white-space:pre-wrap; font:12px/1.45 Consolas, monospace;
          background:#11151b; border:1px solid #1e2732; border-radius:5px;
-         padding:10px 12px; height:calc(100vh - 141px); overflow-y:auto; }
+         padding:10px 12px; height:calc(100vh - 141px); overflow-y:auto; text-align: left; }
   .ok { color:#7fd0a0; } .bad { color:#d08a7f; } .warn { color:#d8c07f; }
   #brand { text-align:center; padding:8px 10px; background:#0e1116;
            border-bottom:1px solid #1e2732; }
@@ -19,10 +19,23 @@
                vertical-align:middle; }
   #brand b { font-size:15px; font-weight:700; letter-spacing:.14em;
              color:#e6ebf2; vertical-align:middle; }
+             
+  /* تنسيق الصورة المضافة لتناسب أبعاد المتصفح وشاشات العرض */
+  .custom-image {
+    max-width: 100%;
+    height: auto;
+    max-height: 200px; /* يمكنك تعديل الارتفاع الأقصى حسب رغبتك */
+    margin-bottom: 15px;
+    border-radius: 8px;
+    display: inline-block;
+  }
 </style>
 </head>
 <body>
 <div id="wrap">
+  <!-- element الصورة المضافة (استبدل logo.png بمسار صورتك الفعلي) -->
+  <img src="image.png" alt="PS4 Poops Image" class="custom-image">
+
   <div id="state">loading poops chain...</div>
   <div id="out"></div>
 </div>
